@@ -21,8 +21,28 @@ print(my_car.inscolor)
 #another class for the same
 
 class NewCar():
-
+    #this is a class object attribute which will be same
+    #for every instance of the class 
+    carmaker = "toyota"
+    speed = 0
     def __init__(self,color,topspeed):
         self.color = color
         self.topspeed = topspeed
 
+    #lets define a method to acclerate the car
+    def acclerate(self,speedincrease):
+        self.speed=self.speed+speedincrease
+
+    def showspeed(self):
+        print(self.speed)
+
+
+new_car = NewCar(color="red",topspeed=500)
+print(new_car.carmaker)
+
+new_car.showspeed()
+new_car.acclerate(100)
+new_car.showspeed()
+new_car.acclerate(100)
+new_car.acclerate(100)
+new_car.showspeed()
