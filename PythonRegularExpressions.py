@@ -40,6 +40,17 @@ for match in re.finditer(pattern,text):
 Problem statement : a phone number is of the format 555-555-5555
                     Lets write a regular expression to parse phone numbers in a text
 
+
+REMEMBER THE FOLLOWING TABLE FOR REGULAR EXPRESSIONS
+
+Character       Description     Example Pattern Code        Example Match
+\d              A digit          file_\d\d                   file_25
+\w              Alphanumeric     \w-\w\w\w                   a-123, b-12_3, b-1_23 etc.
+\s              whitespace       \w\s\w\s\w                  a b c , 1 2 3 , _ _ _ etc
+\D              A non digit      \D\D\D                      ABC, abc etc
+\W              a non alphanum   \W\W\W\W\W                  **#>*,*()#&
+\S              A non-whitespce  \S\S\S\S                    yoyo
+
 '''
 
 text = "Phone number home is 111-222-3344 and office is 222-333-4455"
