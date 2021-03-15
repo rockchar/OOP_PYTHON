@@ -51,12 +51,6 @@ class Account():
         return "Account of {} starting with balance {}".format(self.name,self.accountbalance)
 
 
-
-
-
-
-
-
     def addtransaction(self,amount):
         if not isinstance(amount,int):
             raise ValueError("please use integer for amount")

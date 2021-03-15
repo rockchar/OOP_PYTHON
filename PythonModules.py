@@ -28,6 +28,9 @@ print(my_def_dict["Correct"])
 print(my_def_dict["Wrong"])
 
 
+
+
+
 from collections import namedtuple
 
 
@@ -39,4 +42,6 @@ print(sammy.name)
 print(sammy.age)
 print(sammy.breed)
 
-
+list_e = [1,2,3,4,5,6]
+print(list(list_e))
+print(list(map(lambda x: x**x,list_e)))
